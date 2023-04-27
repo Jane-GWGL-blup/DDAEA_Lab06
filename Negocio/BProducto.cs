@@ -42,5 +42,36 @@ namespace Negocio
             }
             
         }
+
+
+        public void Actualizar(Producto producto)
+        {
+            try
+            {
+                
+                datos.Actualizar(producto);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        public void Delete(Producto producto)
+        {
+            try
+            {
+
+                datos.Delete(producto);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
     }
 }
